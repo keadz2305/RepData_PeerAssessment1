@@ -4,6 +4,7 @@ author: "keadz2305"
 date: "March 6, 2016"
 output: 
   html_document: 
+    fig_caption: yes
     keep_md: yes
 ---
 

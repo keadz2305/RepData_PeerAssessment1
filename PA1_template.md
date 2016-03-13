@@ -19,7 +19,7 @@ aggdata = aggregate(data$steps~data$date,FUN=sum)
 ```
 
 ####Make a histogram of the total number of steps taken each day
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 
 ####Calculate and report the mean and median of the total number of steps taken per day
@@ -39,7 +39,7 @@ The median total number of steps taken per day is:10765
 ###What is the average daily activity pattern?
 
 ####Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 
 ####Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -99,7 +99,7 @@ newdata$steps[NAindex] <- newNA2$`data$steps`[seq(1,2304)]
 ```r
 aggdatanew = aggregate(newdata$steps~newdata$date,FUN=sum)
 ```
-![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
 
 ```r
 newdaymeansteps <- as.integer(mean(aggdatanew$`newdata$steps`))
@@ -127,7 +127,7 @@ newdata2 <- newdow[,-1]
 ```
 
 ####Make a panel plot containing a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis).
-![](PA1_template_files/figure-html/unnamed-chunk-13-1.png)
+![](PA1_template_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
 
 
 
